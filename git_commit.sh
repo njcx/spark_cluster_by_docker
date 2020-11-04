@@ -10,7 +10,10 @@ function rand(){
 rnd=$(rand 1 10)   
 echo $rnd   
 
+if (( $rnd >5  ))
+then
+    git add .
+    git commit -m "init"
+    git push
 
-git add .
-git commit -m "init"
-git push 
+fi 
